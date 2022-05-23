@@ -1,0 +1,256 @@
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px;
+  background: var(--primary);
+}
+.navbar .products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.navbar .products .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.navbar .products .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar .my-cart {
+  background: #007bff;
+  border: 1px solid #009ffd;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar .my-cart span {
+  color: #009ffd;
+  transition: 1s;
+}
+.navbar .my-cart:hover {
+  background: #009ffd;
+}
+.navbar .my-cart:hover span {
+  color: #2a2a72;
+}
+
+.our_products {
+  background: var(--mainWhite);
+  padding: 50px 0 50px 0;
+}
+.our_products h1 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  font-family: Permanent Marker, cursive;
+}
+.our_products h1 span {
+  color: var(--mainBlue);
+}
+.our_products .carts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 30px 200px 30px 200px;
+}
+.our_products .carts .cart {
+  background: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.our_products .carts .cart .image {
+  position: relative;
+  background: var(--white);
+  overflow: hidden;
+  cursor: pointer;
+}
+.our_products .carts .cart .image img {
+  width: 100%;
+  height: auto;
+  transform: scale(0.6);
+  transition: 2.5s;
+}
+.our_products .carts .cart .image:hover img {
+  transform: scale(0.8);
+}
+.our_products .carts .cart .image:hover .icon {
+  right: 0;
+  bottom: 0;
+}
+.our_products .carts .cart .image .icon {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: var(--primary);
+  padding: 8px;
+  width: max-content;
+  border-radius: 5px 0 0 0;
+  transition: 1.4s;
+}
+.our_products .carts .cart .image .icon i {
+  color: var(--white);
+  transition: 1s;
+}
+.our_products .carts .cart .image .icon:hover i {
+  color: var(--purple);
+}
+.our_products .carts .cart .info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our_products .carts .cart .info .cost {
+  font-style: italic;
+}
+.our_products .carts .cart:hover {
+  outline: 1px solid #9f9f9f;
+}
+.our_products .carts .cart:hover .info {
+  background: #dfe0e0bd;
+}
+
+.modal_bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal_bg .modal {
+  background: var(--white);
+  width: 25%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.modal_bg .modal title {
+  font-size: 30px;
+}
+.modal_bg .modal img {
+  width: 80%;
+}
+.modal_bg .modal .btns {
+  display: flex;
+  gap: 10px;
+}
+.modal_bg .modal .btns .store {
+  background: #fff;
+  color: var(--lightBlue);
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.modal_bg .modal .btns .store:hover {
+  color: #2a2a72;
+  background: #007bff;
+}
+.modal_bg .modal .btns .go_to_cart {
+  background: #fff;
+  color: var(--yellow);
+  border: 1px solid var(--orange);
+  border-radius: 8px;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.modal_bg .modal .btns .go_to_cart:hover {
+  color: #2a2a72;
+  background: var(--orange);
+}
+
+.hidden {
+  display: none;
+}
+
+.myCart h1 {
+  text-align: center;
+}
+.myCart .product {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+}
+.myCart .product img {
+  width: 100px;
+}
+.myCart .product .quantity {
+  display: flex;
+  gap: 5px;
+}
+.myCart .product .quantity .rec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+.myCart .product .quantity input {
+  text-align: center;
+  border: none;
+  outline: none;
+}

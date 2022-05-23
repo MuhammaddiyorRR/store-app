@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="products">
+        <img src="./img/logo.9f7e506d.svg" alt="" />
+        <div class="nav-link">Products</div>
+      </div>
+      
+        <button class="my-cart">
+          <span>
+            <i class="fa-solid fa-cart-plus"></i>
+            my cart</span
+          >
+        </button>
+      
+    </div>
+
+    <div class="our_products">
+      <h1>our <span>products</span></h1>
+      <div class="carts">
+        <div class="cart">
+          <div class="image">
+            <img src="./img/product-1.png" alt="" />
+            <div class="icon"><i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+          <div class="info">
+            <span class="name">Google Pixel - Black</span>
+            <span class="price">$10</span>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image">
+            <img src="./img/product-2.png" alt="" />
+            <div class="icon"><i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+          <div class="info">
+            <span class="name">Samsung S7</span>
+            <span class="price">$16</span>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image">
+            <img src="./img/product-3.png" alt="" />
+            <div class="icon"><i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+          <div class="info">
+            <span class="name">HTC 10 - Black</span>
+            <span class="price">$8</span>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image">
+            <img src="./img/product-4.png" alt="" />
+            <div class="icon"><i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+          <div class="info">
+            <span class="name">HTC 10 - White</span>
+            <span class="price">$18</span>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image">
+            <img src="./img/product-5.png" alt="" />
+            <div class="icon"><i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+          <div class="info">
+            <span class="name">HTC Desire 626s</span>
+            <span class="price">$24</span>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image">
+            <img src="./img/product-6.png" alt="" />
+            <div class="icon"><i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+          <div class="info">
+            <span class="name">Vintage Iphone</span>
+            <span class="price">$17</span>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image">
+            <img src="./img/product-7.png" alt="" />
+            <div class="icon"><i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+          <div class="info">
+            <span class="name">Iphone 7</span>
+            <span class="price">$30</span>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image">
+            <img src="./img/product-8.png" alt="" />
+            <div class="icon"><i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+          <div class="info">
+            <span class="name">Smashed Iphone</span>
+            <span class="price">$2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_bg">
+      <div class="modal">
+        <span class="title">Item Added To The Cart </span>
+        <img src="./img/product-1.png" alt="" />
+        <span class="name">HTC 10 - Black</span>
+        <span class="price">Price: $ 8</span>
+        <div class="btns">
+          <button class="store">Store</button>
+          <button class="go_to_cart">go to cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="myCart hidden">
+        <h1>Your cart</h1>
+        <div class="product">
+          <img src="./img/product-1.png" class="cart-img"></img>
+          <div class="cart-name">Google Pixel - Black</div>
+          <div class="cart-price">10</div>
+          <div class="quantity">
+            <div class="dec rec">-</div>
+            <input class="num rec" value="1">
+            <div class="inc rec">+</div>
+          </div>
+          <div class="price">10</div>
+                 <p>total<span class="total"></span></p> 
+        </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
